@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
+// complexity O(nlogn)
 public class MergeSort {
     static void Mergesort(int arr[] , int start , int mid , int end){
         int temp[] = new int[end - start + 1] ;
@@ -42,6 +47,11 @@ public class MergeSort {
     public static void main(String[] args) {
         int ar[] = {3,2,9,4,6};
 
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1,3,2,5,7));
+
         PrintSortedArray(ar);
+
+        // sorting using collections; ArrayList sorted
+        Collections.sort(A);
     }
 }
